@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface com botões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="botao1" class="box" onclick="clicar()">
+        Botão 1
+    </div> 
+    <div id="botao2" class="box" onclick="clicar()">
+        Botão 2
+    </div> 
+    <div id="botao3" class="box" onclick="clicar()">
+        Botão 3
+    </div>
+
+    <script>
+        var b1 = window.document.getElementById('botao1')
+        var b2 = window.document.getElementById('botao2')
+        var b3 = window.document.getElementById('botao3')
+
+        function clicar() {
+            window.alert('Você clicou no 1° Botão!')
+        }
+
+        function clicar () {
+            window.alert('Você clicou no 2° Botão!')
+        }
+
+        function clicar () {
+            window.alert('Você clicou no 3° botão!')
+        }
+    </script>
+</body>
+</html>

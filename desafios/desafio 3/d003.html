@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecessor e Sucessor</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.8em;
+            font-weight: bold;
+        }
+
+        div {
+            font: normal 1.5em arial;
+            border: 1px solid black;
+            background-color: rgba(211, 211, 211, 0.295);
+            cursor: pointer;
+            display: block;
+            width: 250px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e depois</h1>
+    <div onclick="clicar()">
+        Antecessor e Sucessor
+    </div>
+
+    <script>
+        function clicar() {
+            var v1 = window.prompt('Digite um número inteiro qualquer')
+            var n1 = Number(v1.value)
+            window.alert(`Antes de ${n1} temos ${n1--}`)
+        }
+    </script>
+</body>
+</html>

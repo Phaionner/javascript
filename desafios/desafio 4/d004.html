@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de produto</title>
+    <style>
+        body {
+            background-color: rgba(99, 237, 241, 0.842);
+        }
+
+        h1 {
+            font-family: Arial;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        div {
+            font: bold 1.8em arial;
+            border: 1px solid black;
+            background-color: rgba(240, 239, 239, 0.616);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.664);
+            cursor: pointer;
+            width: 250px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <div onclick="clicar()">
+        Comprar produto
+    </div>
+
+    <script>
+        function clicar() {
+            var v1 = window.prompt('Que produto você está comprando?')
+            var v2 = Number(window.prompt(`Quanto custa o ${v1} que você está comprando?`))
+            var v3 = Number(window.prompt(`Qual foi o valor que você deu para pagar o ${v1}?`))
+            var n1 = v3 - v2
+            alert(`Você comprou um ${v1} que custou R$ ${v2}. Deu R$ ${v3} e vai receber R$ ${n1} de troco. Volte Sempre!`)
+        }
+        
+    </script>
+</body>
+</html>
